@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+</head>
+
+<body class="container mx-auto lexend">
+    <header>
+        <nav class="fixed top-0 w-full bg-white/30 backdrop-blur-md shadow-md">
+            <div class="flex justify-between items-center py-6 lg:px-36     bg-[#F9F7F3]">
+                <div>
+                    <button id="blog" class="btn bg-lime-300">Blog</button>
+
+                </div>
+                <div class="flex items-center">
+                    <img src="images/logo.png" alt="">
+                    <h1>Donate Bangladesh</h1>
+                </div>
+                <div class="flex  bg-slate-200 w-32 h-10 items-center justify-center rounded-md">
+                    <img src="images/coin.png " alt="">
+                    <h1><span id="available-balance">5500</span>BDT</h1>
+                </div>
+            </div>
+            <!-- donate and history button -->
+            <div class="flex justify-center my-10">
+                <button id="donatin-button" class="rounded-md text-xl px-8  py-4 bg-lime-300 mr-2">Donation</button>
+                <button id="history-button"
+                    class="rounded-md text-xl px-8  py-4 border-gray-500 border-2	">History</button>
+
+            </div>
+        </nav>
+    </header>
+    <main class=" space-y-5 pt-56 lg:px-36">
+        <!-- donation for noakhali -->
+        <section class="flex items-center  border-2 border-gray-100 rounded-2xl p-5">
+            <div class="w-1/2">
+                <img class=" object-cover w-full" src="./images/noakhali.png" alt="">
+            </div>
+            <div class="w-1/2 ml-4 space-y-4">
+                <div class="flex bg-slate-200 w-32 h-10 items-center justify-center rounded-md">
+                    <img src="images/coin.png " alt="">
+                    <h1><span id="noakhali-donate-balance">500</span>BDT</h1>
+                </div>
+                <h1 class="text-xl">Donate for Flood at Noakhali, Bangladesh</h1>
+                <p class="font-normal"> The recent floods in Noakhali have caused significant damage to homes
+                    infrastructure. Your donation
+                    will help provide essential supplies and to those affected by this disaster. Every contribution, big
+                    or small, makes difference. Please join us in supporting the relief efforts and making a positive
+                    impact on the lives of those in need.</p>
+                <div class="my-2">
+                    <input type="text" class="w-full border-2 border-gray-200 py-4 rounded-xl text-center"
+                        placeholder="Write Donation Amount" name="" id="input-donation-noakhali">
+                </div>
+                <button
+                id="donate-noakhali-btn" 
+                class="rounded-md text-xl px-8  py-4 bg-lime-300 w-full">Donate Now</button>
+
+            </div>
+        </section>
+
+        <!-- donation for feni -->
+        <section class="flex items-center  border-2 border-gray-100 rounded-2xl p-5">
+            <div class="w-1/2">
+                <img class=" object-cover w-full" src="./images/feni.png" alt="">
+            </div>
+            <div class="w-1/2 ml-4 space-y-4">
+                <div class="flex bg-slate-200 w-32 h-10 items-center justify-center rounded-md">
+                    <img src="images/coin.png " alt="">
+                    <h1><span id="available-balance">500</span>BDT</h1>
+                </div>
+                <h1 class="text-xl">Donate for Flood at Noakhali, Bangladesh</h1>
+                <p class="font-normal"> The recent floods in Noakhali have caused significant damage to homes
+                    infrastructure. Your donation
+                    will help provide essential supplies and to those affected by this disaster. Every contribution, big
+                    or small, makes difference. Please join us in supporting the relief efforts and making a positive
+                    impact on the lives of those in need.</p>
+                <div class="my-2">
+                    <input  type="text" class="w-full border-2 border-gray-200 py-4 rounded-xl text-center"
+                        placeholder="Write Donation Amount" name="" 
+                        id="input-donation-feni">
+                </div>
+                <button id="donate-feni-btn" class="rounded-md text-xl px-8  py-4 bg-lime-300 w-full">Donate Now</button>
+
+            </div>
+        </section>
+
+        <!-- donation for qouta movment -->
+        <section class="flex items-center  border-2 border-gray-100 rounded-2xl p-5">
+            <div class="w-1/2">
+                <img class=" object-cover w-full" src="./images/quota-protest.png" alt="">
+            </div>
+            <div class="w-1/2 ml-4 space-y-4">
+                <div class="flex bg-slate-200 w-32 h-10 items-center justify-center rounded-md">
+                    <img src="images/coin.png " alt="">
+                    <h1><span id="available-balance">500</span>BDT</h1>
+                </div>
+                <h1 class="text-xl">Donate for Flood at Noakhali, Bangladesh</h1>
+                <p class="font-normal"> The recent floods in Noakhali have caused significant damage to homes
+                    infrastructure. Your donation
+                    will help provide essential supplies and to those affected by this disaster. Every contribution, big
+                    or small, makes difference. Please join us in supporting the relief efforts and making a positive
+                    impact on the lives of those in need.</p>
+                <div class="my-2">
+                    <input type="text" class="w-full border-2 border-gray-200 py-4 rounded-xl text-center"
+                        placeholder="Write Donation Amount" name=""
+                         id="input-donation-qouta">
+                </div>
+                <button 
+                id="donate-qouta-btn" class="rounded-md text-xl px-8  py-4 bg-lime-300 w-full">Donate Now</button>
+
+            </div>
+        </section>
+
+        <!-- history part -->
+         <section class="border-2 border-gray-100 rounded-2xl p-5">
+            <div><h1>history</h1></div>
+
+         </section>
+  
+       
+
+    </main>
+
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
