@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container mx-auto lexend">
+    <header>
+    <nav class="fixed top-0 w-full bg-white/30 backdrop-blur-md shadow-md z-10">
+        <div class="flex justify-between items-center py-6 lg:px-36     bg-[#F9F7F3]">
+            <div>
+                <button id="home" class="btn bg-lime-300 text-xl">Home</button>
+
+            </div>
+            <div class="flex items-center">
+                <img src="images/logo.png" alt="">
+                <h1 class="text-xl">Donate Bangladesh</h1>
+            </div>
+            <div class="flex  bg-slate-200 w-32 h-10 items-center justify-center rounded-md">
+                <img src="images/coin.png " alt="">
+                <h1><span id="available-balance" class="text-xl">5500</span> BDT</h1>
+            </div>
+        </div>
+        <!-- donate and history button -->
+        <div class="flex justify-center my-10">
+
+        </div>
+    </nav>
+    </header>
+    <main>
+        <div class=" mt-56 space-y-4">
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">a.
+                    What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p> The Document Object Model (DOM) is a programming interface for web documents.
+                        It represents the page so that programs can change the document structure, style, and content.
+                        The DOM represents the document as nodes and objects; that way, programming languages can
+                        interact with the page.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">b. How do you select an element from the DOM?
+                </div>
+                <div class="collapse-content">
+                    <p>
+                        JavaScript provides several methods to select DOM elements. Here are some of them:
+                       <br> Using getElementById:
+                        
+                        <br>The getElementById method allows you to select an element by its ID. This method returns the element object if it finds an element with the specified ID, otherwise, it returns null.
+                        <br>    let element = document.getElementById("myId");
+                        <br>Using getElementsByClassName:
+                        <br>The getElementsByClassName method allows you to select elements by their class name. It returns a collection of all elements in the document with the specified class name
+                        <br>let elements = document.getElementsByClassName("myClass");
+                        <br>Using getElementsByTagName:
+                        <br>The getElementsByTagName method allows you to select elements by their tag name. It returns a collection of all elements in the document with the specified tag name.
+                        <br>let elements = document.getElementsByTagName("p");
+                        <br>Using querySelector:
+                        <br>The querySelector method allows you to select the first element that matches a specified CSS selector(s) in the document.
+
+                        let element = document.querySelector(".myClass");
+
+                        Using querySelectorAll:
+                        The querySelectorAll method allows you to select all elements that match a specified CSS selector(s) in the document.
+
+                        let elements = document.querySelectorAll(".myClass");
+
+
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">c. What is event delegation in the context of the DOM,
+                    and why is it useful?
+                </div>
+                <div class="collapse-content">
+                    <p>
+                        Event delegation is a technique where a single event listener is attached to a parent element instead of multiple listeners on child elements. When an event occurs on a child, it bubbles up to the parent, which can handle the event using event.target.
+                        <br>Key benefits;
+
+                        <br>Efficiency: Reduces the number of event listeners, improving performance.
+
+                        <br>Dynamic elements: Automatically handles events on newly added child elements.
+
+                        <br>Cleaner code: Centralizes event handling, making the code easier to maintain.
+
+
+
+
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">d. How do you manipulate an element's attributes and
+                    styles using the DOM?
+                </div>
+                <div class="collapse-content">
+                    <p>
+                        To manipulate an element’s attributes and styles using the DOM:
+
+                        Attributes:
+
+                        <br>Use getAttribute() to retrieve an attribute.
+
+                        <br>Use setAttribute() to change or add an attribute.
+
+                        <br>Use removeAttribute() to delete an attribute.
+
+
+
+                       <br> Styles:
+
+
+
+                       <br> Use the style property to change inline CSS ( element.style.backgroundColor = 'blue';).
+
+
+                        <br>Use classList.add(), classList.remove(), and classList.toggle() to manage CSS classes for styling.
+
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/navigation-home.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
