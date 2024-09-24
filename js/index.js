@@ -16,7 +16,7 @@ document.getElementById('donate-noakhali-btn').addEventListener('click', functio
     const amount = inputValueById('input-donation-noakhali')
     const balance = textValue('available-balance')
     const donateBalance = textValue('noakhali-donate-balance')
-    if (!isNaN(amount) && amount > 0) {
+    if ((!isNaN(amount) && amount > 0) && (balance > amount)) {
         const donation = donateBalance + amount
         const donate = balance - amount
         document.getElementById('available-balance').innerText = donate.toFixed(2)
@@ -69,7 +69,7 @@ document.getElementById('donate-feni-btn').addEventListener('click', function ()
     const amount = inputValueById('input-donation-feni')
     const balance = textValue('available-balance')
     const donateBalance = textValue('feni-donate-balance')
-    if (!isNaN(amount) && amount > 0) {
+    if ((!isNaN(amount) && amount > 0) && (balance > amount)) {
         const donation = donateBalance + amount
         const donate = balance - amount
         document.getElementById('available-balance').innerText = donate
@@ -112,7 +112,7 @@ document.getElementById('donate-qouta-btn').addEventListener('click', function (
     const amount = inputValueById('input-donation-qouta')
     const balance = textValue('available-balance')
     const donateBalance = textValue('qouta-balance')
-    if (!isNaN(amount) && amount > 0) {
+    if ((!isNaN(amount) && amount > 0) && (balance > amount)) {
         const donation = donateBalance + amount
         const donate = balance - amount
         document.getElementById('available-balance').innerText = donate
